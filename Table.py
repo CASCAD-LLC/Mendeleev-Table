@@ -2,6 +2,7 @@ from PyQt6.QtWidgets import *
 from PyQt6.QtCore import *
 from PyQt6.QtGui import *
 import os
+import sys
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -732,6 +733,13 @@ class TableWindow(QMainWindow):
         self.oganeson.setFixedSize(QSize(100, 70))
         self.oganeson.move(QPoint(780, 760))
 
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    app.setStyle("Fusion")
+    window = TableWindow()
+    window.show()
+    app.exec()
 
 
 
