@@ -7,5 +7,5 @@ PyQt6
 
 # Установка:
 
-```git clone https://github.com/CASCAD-LLC/Mendeleev-Table.git 
-   pip install -r requitements.txt ```
+```git clone https://github.com/CASCAD-LLC/Mendeleev-Table.git
+   pip install -r requitements.txt```
