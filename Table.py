@@ -1,7 +1,6 @@
 from PyQt6.QtWidgets import *
 from PyQt6.QtCore import *
 from PyQt6.QtGui import *
-from elements import *
 import os
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -134,8 +133,6 @@ class TableWindow(QMainWindow):
         self.group_8.move(QPoint(800, 10))
 
         self.hygrogen = QPushButton("H\nВодород\n1,0079", self)
-        self.hygrogen_window = Hydrogen()
-        self.hygrogen.clicked.connect(self.hygrogen_window.showMaximized)
         self.hygrogen.setStyleSheet("background-color: #7CFC00")
         self.hygrogen.setFixedSize(QSize(100, 70))
         self.hygrogen.move(QPoint(80, 60))
